@@ -29,6 +29,30 @@ nav, .page-footer{
 .collection-item::before{
 	content: counter(collection-item) '. ';
 }
+
+.tooltip {
+  position: relative;
+  display: inline-block;
+}
+
+.tooltiptext {
+	visibility: hidden;
+	width: 10em;
+	background-color: #0288d1;
+	color: #fff;
+	text-align: center;
+	border-radius: 6px;
+	margin-left: -20em;
+	line-height: 1.5em;
+  /* Position the tooltip */
+    position: absolute;
+    z-index: 1;
+}
+
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+
+}
 /*.page-footer .footer-copyright{
 	background-color: #0288d1;
 }*/
